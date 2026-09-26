@@ -1,1 +1,513 @@
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Shop | KAIBABY</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+
+<!-- HEADER -->
+
+<header class="header">
+
+    <a href="index.html" class="logo" style="text-decoration:none;">
+        <span class="logo-icon">🧸</span>
+        <span>KAIBABY</span>
+    </a>
+
+    <div class="header-actions">
+
+        <button class="icon-btn">
+            🔍
+        </button>
+
+        <button class="icon-btn">
+            ♡
+        </button>
+
+        <button class="cart-btn">
+            🛒
+            <span id="cartCount">0</span>
+        </button>
+
+    </div>
+
+</header>
+
+
+<!-- SHOP HEADER -->
+
+<section class="shop-header">
+
+    <span class="mini-title">
+        KAIBABY COLLECTION
+    </span>
+
+    <h1>
+        Shop for your little one 💕
+    </h1>
+
+    <p>
+        Discover cute fashion, toys, gifts and baby essentials.
+    </p>
+
+</section>
+
+
+<!-- SEARCH -->
+
+<section class="shop-controls">
+
+    <div class="search-box">
+
+        <span>🔍</span>
+
+        <input
+            type="text"
+            id="productSearch"
+            placeholder="Search products..."
+        >
+
+    </div>
+
+
+    <select id="categoryFilter">
+
+        <option value="all">
+            All Categories
+        </option>
+
+        <option value="newborn">
+            Newborn
+        </option>
+
+        <option value="fashion">
+            Kids Fashion
+        </option>
+
+        <option value="toys">
+            Toys
+        </option>
+
+        <option value="shoes">
+            Baby Shoes
+        </option>
+
+        <option value="essentials">
+            Baby Essentials
+        </option>
+
+        <option value="gifts">
+            Gift Hampers
+        </option>
+
+    </select>
+
+
+    <select id="sortProducts">
+
+        <option value="default">
+            Sort By
+        </option>
+
+        <option value="low">
+            Price: Low to High
+        </option>
+
+        <option value="high">
+            Price: High to Low
+        </option>
+
+    </select>
+
+</section>
+
+
+<!-- PRODUCTS -->
+
+<main class="shop-products">
+
+    <!-- PRODUCT 1 -->
+
+    <div class="shop-product"
+         data-name="Cute Baby Romper"
+         data-category="newborn"
+         data-price="499">
+
+        <div class="shop-product-image">
+
+            👶
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+            <span class="product-badge">
+                NEW
+            </span>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Newborn
+            </span>
+
+            <h3>
+                Cute Baby Romper
+            </h3>
+
+            <div class="shop-price">
+                ₹499
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 2 -->
+
+    <div class="shop-product"
+         data-name="Princess Party Dress"
+         data-category="fashion"
+         data-price="699">
+
+        <div class="shop-product-image">
+
+            👗
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Kids Fashion
+            </span>
+
+            <h3>
+                Princess Party Dress
+            </h3>
+
+            <div class="shop-price">
+                ₹699
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 3 -->
+
+    <div class="shop-product"
+         data-name="Soft Teddy Bear"
+         data-category="toys"
+         data-price="399">
+
+        <div class="shop-product-image">
+
+            🧸
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Toys
+            </span>
+
+            <h3>
+                Soft Teddy Bear
+            </h3>
+
+            <div class="shop-price">
+                ₹399
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 4 -->
+
+    <div class="shop-product"
+         data-name="Little Star Shoes"
+         data-category="shoes"
+         data-price="449">
+
+        <div class="shop-product-image">
+
+            👟
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Baby Shoes
+            </span>
+
+            <h3>
+                Little Star Shoes
+            </h3>
+
+            <div class="shop-price">
+                ₹449
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 5 -->
+
+    <div class="shop-product"
+         data-name="Baby Feeding Set"
+         data-category="essentials"
+         data-price="599">
+
+        <div class="shop-product-image">
+
+            🍼
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Baby Essentials
+            </span>
+
+            <h3>
+                Baby Feeding Set
+            </h3>
+
+            <div class="shop-price">
+                ₹599
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 6 -->
+
+    <div class="shop-product"
+         data-name="Baby Gift Hamper"
+         data-category="gifts"
+         data-price="899">
+
+        <div class="shop-product-image">
+
+            🎁
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Gift Hampers
+            </span>
+
+            <h3>
+                Baby Gift Hamper
+            </h3>
+
+            <div class="shop-price">
+                ₹899
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 7 -->
+
+    <div class="shop-product"
+         data-name="Cute Baby Set"
+         data-category="fashion"
+         data-price="749">
+
+        <div class="shop-product-image">
+
+            👕
+            
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Kids Fashion
+            </span>
+
+            <h3>
+                Cute Baby Set
+            </h3>
+
+            <div class="shop-price">
+                ₹749
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+
+    <!-- PRODUCT 8 -->
+
+    <div class="shop-product"
+         data-name="Musical Baby Toy"
+         data-category="toys"
+         data-price="549">
+
+        <div class="shop-product-image">
+
+            🧸
+
+            <button class="shop-wishlist">
+                ♡
+            </button>
+
+        </div>
+
+        <div class="shop-product-info">
+
+            <span>
+                Toys
+            </span>
+
+            <h3>
+                Musical Baby Toy
+            </h3>
+
+            <div class="shop-price">
+                ₹549
+            </div>
+
+            <button class="shop-add">
+                Add to Cart
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+<!-- NO RESULTS -->
+
+<div id="noProducts">
+
+    No products found 💕
+
+</div>
+
+
+<!-- BOTTOM NAV -->
+
+<nav class="bottom-nav">
+
+    <a href="index.html" class="nav-item">
+        <span>⌂</span>
+        <small>Home</small>
+    </a>
+
+    <button class="nav-item active">
+        <span>🛍️</span>
+        <small>Shop</small>
+    </button>
+
+    <button class="nav-item">
+        <span>♡</span>
+        <small>Wishlist</small>
+    </button>
+
+    <button class="nav-item">
+        <span>🛒</span>
+        <small>Cart</small>
+    </button>
+
+    <button class="nav-item">
+        <span>♙</span>
+        <small>Account</small>
+    </button>
+
+</nav>
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
